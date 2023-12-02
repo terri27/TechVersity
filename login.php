@@ -4,10 +4,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Login - Y School</title>
+	<title>TechVersity</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style1.css">
-	<link rel="icon" href="logo.png">
+	<link rel="icon" href="./img/Diseño sin título.png">
 	<link href="img/favicon.ico" rel="icon" />
 
     <!-- Google Web Fonts -->
@@ -134,7 +134,7 @@
               id="navbarCollapse"
             >
               <div class="navbar-nav py-0">
-                <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                <a href="index.php" class="nav-item nav-link active">Inicio</a>
                 <a href="about.html" class="nav-item nav-link">Acerca</a>
                 <a href="course.html" class="nav-item nav-link">Cursos</a>
                 <a href="teacher.html" class="nav-item nav-link">Profesores</a>

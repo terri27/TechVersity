@@ -15,7 +15,7 @@ if ($setting != 0) {
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="Free HTML Templates" name="keywords" />
     <meta content="Free HTML Templates" name="description" />
-
+    <link rel="icon" href="./img/Diseño sin título.png">
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon" />
 
