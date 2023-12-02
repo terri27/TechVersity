@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUQjIg1_i6t8kCHKm459WRhyzbi.ttf) format('truetype');
+  }
+  
+* {
+    font-family: Montserrat;
+}
+
+body {
+   /*background-image: url('./bg.png');*/
+   background-color: #fff;
+    
+}
+
+.container {
+    background-image: url(./mujer-sonriente.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100% !important;/* Utiliza el 100% del ancho de la ventana del viewport */
+    margin: 0 !important;      /* Elimina cualquier margen por defecto */
+    height: 100vh;
+    padding: 0;     /* Elimina cualquier padding por defecto */
+}
+
+
+.form-group {
+    padding-top: 20px;
+}
+
+.form-elements {
+    padding: 30px 60px 30px 60px;
+}
+button{
+    height: 55px;
+    background-color: #5551ff !important;
+    box-shadow: 0px 6px 25px #5451ff8f;
+}
+button:active{
+    box-shadow: 0px 0px 0px #fff;
+    transition: 0.2s;
+}
