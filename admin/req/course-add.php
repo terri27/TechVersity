@@ -8,13 +8,16 @@ if (isset($_SESSION['admin_id']) &&
 
 if (isset($_POST['course_name']) &&
     isset($_POST['course_code']) && 
-    isset($_POST['grade'])) {
+    isset($_POST['grade']) &&
+    isset($_POST['course_carrera'])
+    ) {
     
     include '../../DB_connection.php';
 
     $course_name = $_POST['course_name'];
     $course_code = $_POST['course_code'];
     $grade = $_POST['grade'];
+    $course_carrera = $_POST['course_carrera'];
 
   if (empty($course_name)) {
 		$em  = "course name is required";
@@ -40,10 +43,10 @@ if (isset($_POST['course_name']) &&
            exit;
         }else {
           $sql  = "INSERT INTO
-                 subjects(grade, subject, subject_code)
-                 VALUES(?,?,?)";
+                 subjects(grade, subject, subject_code, subject_carrera)
+                 VALUES(?,?,?,?)";
           $stmt = $conn->prepare($sql);
-          $stmt->execute([$grade, $course_name, $course_code]);
+          $stmt->execute([$grade, $course_name, $course_code, $course_carrera]);
           $sm = "New course created successfully";
           header("Location: ../course-add.php?success=$sm");
           exit;

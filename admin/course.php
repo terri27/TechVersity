@@ -54,6 +54,7 @@ if (
                   <th scope="col">Curso</th>
                   <th scope="col">Código de Materia</th>
                   <th scope="col">Año</th>
+                  <th scope="col">Carrera</th>
                 </tr>
               </thead>
               <tbody>
@@ -79,8 +80,13 @@ if (
                       ?>
                     </td>
                     <td>
+                      <?php
+                      echo $course['subject_carrera'];
+                      ?>
+                    </td>
+                    <td>
                       <a href="course-edit.php?course_id=<?= $course['subject_id'] ?>" class="btn btn-warning">Editar</a>
-
+                      
                       <a href="course-delete.php?course_id=<?= $course['subject_id'] ?>" class="btn btn-danger">Eliminar</a>
                     </td>
                   </tr>

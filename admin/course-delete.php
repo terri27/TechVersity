@@ -8,7 +8,7 @@ if (
 
    if ($_SESSION['role'] == 'Admin') {
       include "../DB_connection.php";
-      include "data/course.php";
+      include "./course.php";
 
       $id = $_GET['course_id'];
       if (removeCourse($id, $conn)) {

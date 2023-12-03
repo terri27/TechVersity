@@ -81,6 +81,11 @@ if (
 
             </select>
           </div>
+          <div class="mb-3">
+            <label class="form-label">Carrera</label>
+            <input type="text" class="form-control" value="<?= $course['subject_carrera'] ?>" name="course_carrera">
+          </div>
+          
           <input type="text" class="form-control" value="<?= $course['subject_id'] ?>" name="course_id" hidden>
 
           <button type="submit" class="btn btn-primary">
