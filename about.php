@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>ECOURSES - Universidad en línea</title>
+    <title>TechVersity - Universidad en línea</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -130,8 +130,8 @@
                 id="navbarCollapse"
               >
                 <div class="navbar-nav py-0">
-                  <a href="index.html" class="nav-item nav-link ">Inicio</a>
-                  <a href="about.html" class="nav-item nav-link active">Acerca</a>
+                  <a href="index.php" class="nav-item nav-link ">Inicio</a>
+                  <a href="about.php" class="nav-item nav-link active">Acerca</a>
                   <a href="course.html" class="nav-item nav-link">Cursos</a>
                   <a href="teacher.html" class="nav-item nav-link">Profesores</a>
                   <div class="nav-item dropdown">
@@ -199,14 +199,7 @@
                 <h1>Manera innovadora de aprender</h1>
               </div>
               <p>
-                Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita,
-                ipsum dolores amet voluptua duo dolores et sit ipsum rebum,
-                sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus
-                gubergren sit rebum clita amet, sea est sea vero sed et.
-                Sadipscing labore tempor at sit dolor clita consetetur diam. Diam
-                ut diam tempor no et, lorem dolore invidunt no nonumy stet ea
-                labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit
-                tempor ut nonumy elitr dolores justo aliquyam ipsum stet
+                En TECHVERSITY, entendemos que el aprendizaje debe ser tan ilimitado como el potencial de nuestros estudiantes. Por eso, nuestros programas están diseñados para estimular la innovación, fomentar la creatividad y desarrollar habilidades prácticas aplicables en el mundo real. Ya sea que prefieras el aprendizaje autodirigido o la interacción en tiempo real con compañeros y profesores, nuestro modelo educativo flexible te permite estudiar desde cualquier lugar del mundo, a cualquier hora del día.
               </p>
               <a
                 href=""
@@ -222,157 +215,117 @@
 
     <!-- Registration Start -->
     <div class="container-fluid bg-registration py-5" style="margin: 90px 0">
-        <div class="container py-5">
-          <div class="row align-items-center">
-            <div class="col-lg-7 mb-5 mb-lg-0">
-              <div class="mb-4">
-                <h5
-                  class="text-primary text-uppercase mb-3"
-                  style="letter-spacing: 5px"
-                >
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-7 mb-5 mb-lg-0">
+            <div class="mb-4">
+              <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px">
                 NECESITas ALGÚN CURSO
-                </h5>
-                <h1 class="text-white">30% de descuento para nuevos estudiantes</h1>
-              </div>
-              <p class="text-white">
-                Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo
-                dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo.
-                Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est
-                dolor
-              </p>
-              <ul class="list-inline text-white m-0">
-                <li class="py-2">
-                  <i class="fa fa-check text-primary mr-3"></i>Labore eos amet
-                  dolor amet diam
-                </li>
-                <li class="py-2">
-                  <i class="fa fa-check text-primary mr-3"></i>Etsea et sit dolor
-                  amet ipsum
-                </li>
-                <li class="py-2">
-                  <i class="fa fa-check text-primary mr-3"></i>Diam dolor diam
-                  elitripsum vero.
-                </li>
-              </ul>
+              </h5>
+              <h1 class="text-white">30% de descuento para nuevos estudiantes</h1>
             </div>
-            <div class="col-lg-5">
-              <div class="card border-0">
-                <div class="card-header bg-light text-center p-4">
-                  <h1 class="m-0">¡Regístrate Ahora!</h1>
-                </div>
-                <div class="card-body rounded-bottom bg-primary p-5">
-                  <form>
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control border-0 p-4"
-                        placeholder="Tu nombre"
-                        required="required"
-                      />
+            <p class="text-white">
+            Descubre una amplia variedad de cursos en áreas de la tecnología. Aprende a tu propio ritmo con acceso las 24 horas. Nuestros cursos están diseñados para impulsar tu carrera y enriquecer tus conocimientos. Con expertos de la industria y material actualizado, estarás en el camino correcto para alcanzar tus metas profesionales.
+            </p>
+            <ul class="list-inline text-white m-0">
+              <li class="py-2">
+                <i class="fa fa-check text-primary mr-3"></i>Cursos flexibles que se adaptan a tu horario.
+              </li>
+              <li class="py-2">
+                <i class="fa fa-check text-primary mr-3"></i>Oportunidades de networking y desarrollo profesional.
+              </li>
+              <li class="py-2">
+                <i class="fa fa-check text-primary mr-3"></i>Soporte constante de tutores experimentados.
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-5">
+            <div class="card border-0">
+              <div class=" container bg-dark">
+                <section style="margin: 20px;" id="contact" class="d-flex justify-content-center align-items-center flex-column">
+                  <form method="post" action="req/contact.php">
+                    <h3 class="text-white">Contáctanos</h3>
+                    <?php if (isset($_GET['error'])) { ?>
+                      <div class="alert alert-danger" role="alert">
+                        <?= $_GET['error'] ?>
+                      </div>
+                    <?php } ?>
+                    <?php if (isset($_GET['success'])) { ?>
+                      <div class="alert alert-success" role="alert">
+                        <?= $_GET['success'] ?>
+                      </div>
+                    <?php } ?>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label text-white">Correo Electrónico</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text text-white">Nunca compartiremos su correo electrónico con nadie más</div>
                     </div>
-                    <div class="form-group">
-                      <input
-                        type="email"
-                        class="form-control border-0 p-4"
-                        placeholder="Tu email"
-                        required="required"
-                      />
+                    <div class="mb-3">
+                      <label class="form-label text-white">Nombre Completo</label>
+                      <input type="text" name="full_name" class="form-control">
                     </div>
-                    <div class="form-group">
-                      <select
-                        class="custom-select border-0 px-4"
-                        style="height: 47px"
-                      >
-                        <option selected>Selecciona un curso</option>
-                        <option value="1">Course 1</option>
-                        <option value="2">Course 1</option>
-                        <option value="3">Course 1</option>
-                      </select>
+                    <div class="mb-3">
+                      <label class="form-label text-white">Mensaje</label>
+                      <textarea class="form-control" name="message" rows="4"></textarea>
                     </div>
-                    <div>
-                      <button
-                        class="btn btn-dark btn-block border-0 py-3"
-                        type="submit"
-                      >
-                        Registrarme ahora
-                      </button>
-                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
                   </form>
-                </div>
+                </section>
+
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Registration End -->
-
-
+    </div>
+    <!-- Registration End -->
+    
+    
     <!-- Testimonial Start -->
     <div class="container-fluid py-5">
-        <div class="container py-5">
-          <div class="text-center mb-5">
-            <h5
-              class="text-primary text-uppercase mb-3"
-              style="letter-spacing: 5px"
-            >
-              Testimonios
-            </h5>
-            <h1>Lo que dicen nuestros estudiantes</h1>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-lg-8">
-              <div class="owl-carousel testimonial-carousel">
-                <div class="text-center">
-                  <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                  <h4 class="font-weight-normal mb-4">
-                    Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum
-                    elitr dolore et eos labore, stet justo sed est sed. Diam sed
-                    sed dolor stet amet eirmod eos labore diam
-                  </h4>
-                  <img
-                    class="img-fluid mx-auto mb-3"
-                    src="img/testimonial-1.jpg"
-                    alt=""
-                  />
-                  <h5 class="m-0">Estudent engineer</h5>
-                  <span>Profession</span>
-                </div>
-                <div class="text-center">
-                  <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                  <h4 class="font-weight-normal mb-4">
-                    Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum
-                    elitr dolore et eos labore, stet justo sed est sed. Diam sed
-                    sed dolor stet amet eirmod eos labore diam
-                  </h4>
-                  <img
-                    class="img-fluid mx-auto mb-3"
-                    src="img/testimonial-2.jpg"
-                    alt=""
-                  />
-                  <h5 class="m-0">Estudent engineer</h5>
-                  <span>Profession</span>
-                </div>
-                <div class="text-center">
-                  <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                  <h4 class="font-weight-normal mb-4">
-                    Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum
-                    elitr dolore et eos labore, stet justo sed est sed. Diam sed
-                    sed dolor stet amet eirmod eos labore diam
-                  </h4>
-                  <img
-                    class="img-fluid mx-auto mb-3"
-                    src="img/testimonial-3.jpg"
-                    alt=""
-                  />
-                  <h5 class="m-0">Estudent engineer</h5>
-                  <span>Profession</span>
-                </div>
+      <div class="container py-5">
+        <div class="text-center mb-5">
+          <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px">
+            Testimonios
+          </h5>
+          <h1>Lo que dicen nuestros estudiantes</h1>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="owl-carousel testimonial-carousel">
+              <div class="text-center">
+                <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                <h4 class="font-weight-normal mb-4">
+                Si buscas una experiencia de aprendizaje en línea que sea flexible pero exhaustiva, TechVersity es el lugar. Los cursos son desafiantes, pero justos, y hay un verdadero sentido de comunidad
+                </h4>
+                <img class="img-fluid mx-auto mb-3" src="img/testimonial-1.jpg" alt="" />
+                <h5 class="m-0">Estudent engineer</h5>
+                <span>Profession</span>
+              </div>
+              <div class="text-center">
+                <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                <h4 class="font-weight-normal mb-4">
+                Gracias a TECHVERSITY pude obtener mi título con excelencia académica mientras viajaba por el mundo. ¡Su enfoque global y diverso del aprendizaje en línea es Genial!
+                </h4>
+                <img class="img-fluid mx-auto mb-3" src="img/testimonial-2.jpg" alt="" />
+                <h5 class="m-0">Estudent engineer</h5>
+                <span>Profession</span>
+              </div>
+              <div class="text-center">
+                <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                <h4 class="font-weight-normal mb-4">
+                La plataforma de aprendizaje de TECHVERSITY es intuitiva y fácil de usar. Los recursos siempre están disponibles y los tutores son realmente comprensivos y altamente cualificados
+                </h4>
+                <img class="img-fluid mx-auto mb-3" src="img/testimonial-3.jpg" alt="" />
+                <h5 class="m-0">Estudent engineer</h5>
+                <span>Profession</span>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Testimonial End -->
+    </div>
+    <!-- Testimonial End -->
 
 
     <!-- Footer Start -->
