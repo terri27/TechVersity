@@ -21,7 +21,7 @@
           <a class="nav-link" href="grade.php">Años</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="section.php">Secciones</a>
+          <a class="nav-link" href="section.php">Carreras</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="class.php">Año - Sección</a>

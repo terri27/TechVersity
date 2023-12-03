@@ -30,12 +30,12 @@ if (isset($_SESSION['admin_id']) &&
      ?>
      <div class="container mt-5">
         <a href="grade.php"
-           class="btn btn-dark">Go Back</a>
+           class="btn btn-dark">Volver</a>
 
         <form method="post"
               class="shadow p-3 mt-5 form-w" 
               action="req/grade-add.php">
-        <h3>Add New Grade</h3><hr>
+        <h3>Agregar un nuevo año</h3><hr>
         <?php if (isset($_GET['error'])) { ?>
           <div class="alert alert-danger" role="alert">
            <?=$_GET['error']?>
@@ -47,14 +47,14 @@ if (isset($_SESSION['admin_id']) &&
           </div>
         <?php } ?>
         <div class="mb-3">
-          <label class="form-label">Grade Code</label>
+          <label class="form-label">Año</label>
           <input type="text" 
                  class="form-control"
                  value="<?=$grade_code?>" 
                  name="grade_code">
         </div>
         <div class="mb-3">
-          <label class="form-label">Grade</label>
+          <label class="form-label">Semestre</label>
           <input type="text" 
                  class="form-control"
                  value="<?=$grade?>"

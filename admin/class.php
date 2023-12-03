@@ -32,7 +32,7 @@ if (
       if ($classes != 0) {
       ?>
         <div class="container mt-5">
-          <a href="class-add.php" class="btn btn-dark">Agregar Nuevo Año</a>
+          <a href="class-add.php" class="btn btn-dark">Asignar Año y Curso</a>
 
           <?php if (isset($_GET['error'])) { ?>
             <div class="alert alert-danger mt-3 n-table" role="alert">
@@ -51,7 +51,7 @@ if (
               <thead>
                 <tr>
                   <th scope="col">#</th>
-                  <th scope="col">Año - Sección</th>
+                  <th scope="col">Año - Carrera</th>
                 </tr>
               </thead>
               <tbody>

@@ -58,11 +58,11 @@ if (
             </div>
           <?php } ?>
           <div class="mb-3">
-            <label class="form-label">Código de Año</label>
+            <label class="form-label">Año</label>
             <input type="text" class="form-control" value="<?= $grades['grade_code'] ?>" name="grade_code">
           </div>
           <div class="mb-3">
-            <label class="form-label">Año</label>
+            <label class="form-label">Semestre</label>
             <input type="text" class="form-control" value="<?= $grades['grade'] ?>" name="grade">
           </div>
           <input type="text" class="form-control" value="<?= $grades['grade_id'] ?>" name="grade_id" hidden>

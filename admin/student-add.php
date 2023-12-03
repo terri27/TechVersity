@@ -134,7 +134,7 @@ if (
             </div>
           </div>
           <div class="mb-3">
-            <label class="form-label">Sección</label>
+            <label class="form-label">Carreras</label>
             <div class="row row-cols-5">
               <?php foreach ($sections as $section) : ?>
                 <div class="col">

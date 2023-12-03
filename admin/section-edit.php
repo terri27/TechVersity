@@ -42,7 +42,7 @@ if (
         <a href="section.php" class="btn btn-dark">Volver</a>
 
         <form method="post" class="shadow p-3 mt-5 form-w" action="req/section-edit.php">
-          <h3>Editar Sección</h3>
+          <h3>Editar Carrera</h3>
           <hr>
           <?php if (isset($_GET['error'])) { ?>
             <div class="alert alert-danger" role="alert">
@@ -55,7 +55,7 @@ if (
             </div>
           <?php } ?>
           <div class="mb-3">
-            <label class="form-label">Sección</label>
+            <label class="form-label">Carrera</label>
             <input type="text" class="form-control" value="<?= $section['section'] ?>" name="section">
           </div>
           <input type="text" class="form-control" value="<?= $section['section_id'] ?>" name="section_id" hidden>

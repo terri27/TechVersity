@@ -30,7 +30,7 @@ if (
       if ($sections != 0) {
       ?>
         <div class="container mt-5">
-          <a href="section-add.php" class="btn btn-dark">Agregar Nueva Sección</a>
+          <a href="section-add.php" class="btn btn-dark">Agregar Nueva Carrera</a>
 
           <?php if (isset($_GET['error'])) { ?>
             <div class="alert alert-danger mt-3 n-table" role="alert">
@@ -49,7 +49,7 @@ if (
               <thead>
                 <tr>
                   <th scope="col">#</th>
-                  <th scope="col">Sección</th>
+                  <th scope="col">Carrera</th>
                 </tr>
               </thead>
               <tbody>
