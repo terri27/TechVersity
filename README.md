@@ -1,7 +1,7 @@
 
 
 # TechVersity
-![](https://github.com/terri27/TechVersity/blob/master/img/Dise%C3%B1o%20sin%20t%C3%ADtulo.png?raw=true)
+![](https://github.com/terri27/TechVersity/blob/master/img/Logo-tech.png?raw=true)
 =============
 
 ## Autores
