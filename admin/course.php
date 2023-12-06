@@ -81,7 +81,7 @@ if (
                     </td>
                     <td>
                       <?php
-                      echo $course['subject_carrera'];
+                      echo $course['subject'];
                       ?>
                     </td>
                     <td>
