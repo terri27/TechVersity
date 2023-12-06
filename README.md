@@ -1,7 +1,7 @@
 
 
 # TechVersity
-![](https://github.com/terri27/TechVersity/blob/master/img/Logo-tech.png?raw=true)
+![](https://github.com/terri27/TechVersity/blob/master/img/tech-logo-versity.png?raw=true)
 =============
 
 ## Autores
