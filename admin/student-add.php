@@ -109,15 +109,15 @@ if (
           </div><br>
           <hr>
           <div class="mb-3">
-            <label class="form-label">Nombre de Acudiente</label>
+            <label class="form-label">Numero de Cédula</label>
             <input type="text" class="form-control" value="<?= $pfn ?>" name="parent_fname">
           </div>
           <div class="mb-3">
-            <label class="form-label">Apellido de Acudiente</label>
+            <label class="form-label">Tipo de sangre</label>
             <input type="text" class="form-control" value="<?= $pln ?>" name="parent_lname">
           </div>
           <div class="mb-3">
-            <label class="form-label">Teléfono de Acudiente</label>
+            <label class="form-label">Teléfono</label>
             <input type="text" class="form-control" value="<?= $ppn ?>" name="parent_phone_number">
           </div><br>
           <hr>
