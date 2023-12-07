@@ -64,9 +64,9 @@ if (isset($_SESSION['student_id']) &&
                   ?>
             </li>
             <br><br>
-            <li class="list-group-item">Parent first name: <?=$student['parent_fname']?></li>
-            <li class="list-group-item">Parent last name: <?=$student['parent_lname']?></li>
-            <li class="list-group-item">Parent phone number: <?=$student['parent_phone_number']?></li>
+            <li class="list-group-item">Numero de cedula: <?=$student['parent_fname']?></li>
+            <li class="list-group-item">Tipo de sangre: <?=$student['parent_lname']?></li>
+            <li class="list-group-item">Telefono: <?=$student['parent_phone_number']?></li>
           </ul>
         </div>
      </div>
