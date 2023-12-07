@@ -72,6 +72,22 @@ Las contribuciones son lo que hacen que la comunidad de código abierto sea un l
 5. Abre un Pull Request
 
 
+## Credenciales de acceso
+Iniciar sesión como usuario admin
+Usuario: admin
+Password: 1234abcd..
+
+Iniciar sesión como estudiante
+Usuario: ivan
+Password: 12345
+
+Iniciar sesión como profesor
+Usuario: pprofe
+Password: 12345
+
+
+
+
 ## 📄 Licencia
 
 Este proyecto está bajo la Licencia (Tu Licencia) - ve el archivo [LICENSE.md](LICENSE.md) para detalles.
