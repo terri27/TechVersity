@@ -32,7 +32,7 @@ if (
       if ($courses != 0) {
       ?>
         <div class="container mt-5">
-          <a href="course-add.php" class="btn btn-dark">Agregar Materia</a>
+          <a href="course-add.php" class="btn btn-dark">Agregar o Retirar Materia</a>
 
           <?php if (isset($_GET['error'])) { ?>
             <div class="alert alert-danger mt-3 n-table" role="alert">
